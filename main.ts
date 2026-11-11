@@ -43,7 +43,7 @@ for (const r of lastSnap.up_and_coming) {
 candidates.sort((a, b) => a.projectedRank - b.projectedRank);
 const projectedChart = candidates.map((c) => c.uid);
 
-// Calibrated dispersion kernel
+// Calibrated dispersion kernel (2-neighbor decay)
 const P_STAY = 0.35;
 const P_NEIGH = 0.12;
 const P_SECOND_NEIGH = 0.04;

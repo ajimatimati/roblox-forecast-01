@@ -110,7 +110,7 @@ const top10 = candidates.slice(0, task.places).map((c) => c.universe_id);
 // Calibrated floor: unnamed mass = 0.50, named budget = 0.50
 const UNNAMED_MASS = 0.50;
 const NAMED_BUDGET = 1.0 - UNNAMED_MASS;
-const SIGMA = 6.5;
+const SIGMA = 6.6; // Calibrated dispersion kernel bandwidth
 const K_CANDIDATES = 16;
 const topPool = candidates.slice(0, 35);
 
